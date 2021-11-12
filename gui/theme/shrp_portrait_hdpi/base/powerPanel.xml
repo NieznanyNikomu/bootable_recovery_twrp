@@ -336,15 +336,9 @@
 		</template>
 
 		<template name="fastbootPanel">
-			<image>
-				<condition var1="tw_fastboot_mode" var2="1"/>
-				<placement x="744" y="1130"/>
-				<image resource="slotPanel"/>
-			</image>
-
 			<button>
 				<condition var1="tw_fastboot_mode" var2="1"/>
-				<placement x="748" y="1125"/>
+				<placement x="748" y="840" />
 				<image resource="c_reboot_to_system"/>
 				<actions>
 					<action function="set">tw_action=reboot</action>
@@ -356,7 +350,7 @@
 
 			<button>
 				<condition var1="tw_fastboot_mode" var2="1"/>
-				<placement x="744" y="1240" w="315" h="60"/>
+				<placement x="744" y="975" w="315" h="60"/>
 				<fill color="%transparent%"/>
 				<font resource="moreSmall" color="%secondaryColor%"/>
 				<text>{@fastboot_button=Fastboot}</text>
