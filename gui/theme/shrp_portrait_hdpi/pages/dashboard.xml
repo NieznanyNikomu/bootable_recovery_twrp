@@ -9,6 +9,11 @@
 				<placement x="560" y="%rPos8%"/>
 				<image resource="SKYHAWK"/>
 			</image>
+			
+			<text style="dashboardHeader">
+				<placement x="600" y="%rPos17%"/>
+				<text>By @shas45558</text>
+			</text>
 
 
 
