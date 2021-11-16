@@ -167,15 +167,6 @@ GUIListBox::GUIListBox(xml_node<>* node) : GUIScrollList(node)
 				aItem.fileName="c_magisk.zip";
 				addons.push_back(aItem);
 			}
-			{
-				addonInfo aItem;
-				aItem.name = gui_parse_text("{@c_unroot=Unroot} {@c_magisk=Magisk}");
-				aItem.info = gui_parse_text("{@confirm_action=Confirm Action}");
-				aItem.confirmBtnText = gui_parse_text("{@c_unroot=Unroot}");
-				aItem.successfulText = gui_parse_text("{@successful=Successful}");
-				aItem.fileName="unmagisk.zip";
-				addons.push_back(aItem);
-			}
 #endif
 			{
 #ifdef SHRP_EXTERNAL_ADDON_1_NAME
