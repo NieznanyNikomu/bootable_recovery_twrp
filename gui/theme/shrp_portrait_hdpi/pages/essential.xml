@@ -24,6 +24,11 @@
 				<touch key="power+voldown"/>
 				<action function="screenshot"/>
 			</action>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 		</page>
         <page name="slideout">
 			<template name="navSlideout"/>
@@ -123,6 +128,11 @@
 			<action>
 				<touch key="power+voldown"/>
 				<action function="screenshot"/>
+			</action>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
 			</action>
 		</page>
 	</pages>

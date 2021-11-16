@@ -15,14 +15,15 @@
 				<text>By @shas45558</text>
 			</text>
 
-
-
 			<text style="dashboardHeader">
 				<placement x="%c_hawk_base_column%" y="%rPos17%"/>
 				<text>{@c_essentials=Essentials}</text>
 			</text>
-
-
+						
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<button>
 				<condition var1="dashboardSubTintEnabled" var2="1"/>

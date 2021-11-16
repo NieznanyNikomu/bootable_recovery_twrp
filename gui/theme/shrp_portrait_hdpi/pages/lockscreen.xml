@@ -66,6 +66,11 @@
 				<touch key="power"/>
 				<action function="togglebacklight"/>
 			</action>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 		</page>
 	</pages>
 </recovery>

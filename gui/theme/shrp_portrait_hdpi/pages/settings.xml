@@ -10,10 +10,20 @@
 				<text>{@settings_btn=Settings}</text>
 			</text>
 
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 			<text style="pageSubTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@settings_gen_hdr=General} {@settings_btn=Settings}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<listbox style="scrolllist">
 				<placement x="%c_hawk_base_column%" y="%rPos19%" w="%file_selector_default_w%" h="%revPos100%"/>
@@ -142,6 +152,16 @@
 				<text>%tw_time%</text>
 			</text>
 
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+				
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+
 			<checkbox>
 				<placement x="%c_hawk_base_column%" y="0" yop="+" yref="%rPos12%"/>
 				<text>{@use_dst_chk=Use daylight savings time (DST)}</text>
@@ -245,6 +265,11 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_device=Device}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<button>
 				<condition var1="tw_screen_timeout_secs" op="=" var2="0"/>
@@ -379,6 +404,11 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>S H R P</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<text style="pageSubTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
@@ -459,6 +489,11 @@
 				<placement x="%c_hawk_base_column%" y="%rndPos88%"/>
 				<text>{@sel_tz_offset=Select Offset (usually 0): %tw_time_zone_guioffset%}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<listbox>
 				<placement x="%c_hawk_base_column%" y="%rndPos94%" w="%c_console_width%" h="400"/>
@@ -487,6 +522,11 @@
 				<text>{@settings_language_btn=Language}</text>
 			</text>
 
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 			<listbox>
 				<placement x="%c_hawk_base_column%" y="%rPos12%" w="%file_selector_default_w%" h="%revPos93%"/>
 				<text>{@select_language=Select Language:}</text>

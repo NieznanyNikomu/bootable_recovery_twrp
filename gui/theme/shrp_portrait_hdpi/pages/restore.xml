@@ -16,6 +16,10 @@
 					<action function="page">multiuser_warning</action>
 				</actions>
 			</action>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="pageTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@restore_hdr=Restore}</text>
@@ -71,7 +75,10 @@
 					<action function="page">restore_decrypt</action>
 				</actions>
 			</action>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<action>
 				<condition var1="tw_restore_encrypted" var2="0"/>
 				<actions>
@@ -91,7 +98,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@restore_enc_backup_hdr=Encrypted Backup}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
 				<text>{@enter_pass=Enter Password:}</text>
@@ -162,7 +172,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@restore_try_decrypt_s=Trying Decryption}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<template name="c_console"/>
 			<template name="progress_bar"/>
 
@@ -202,7 +215,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@restore_backup_date=Backup made on %tw_restore_file_date%}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 
 			<text style="subOptionTitle">
@@ -293,7 +309,10 @@
 			</text>
 
 
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
 				<text>{@name=Name:}</text>
@@ -366,7 +385,10 @@
 				<placement x="%c_hawk_base_column%" y="1430"/>
 				<text>{@progress=Progress:} %tw_size_progress%</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<action>
 				<condition var1="tw_operation_state" var2="1"/>
 				<actions>

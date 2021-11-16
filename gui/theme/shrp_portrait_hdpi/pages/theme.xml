@@ -10,7 +10,10 @@
 				<fill color="%transparent%"/>
 				<text>{@c_theme=Theme}</text>
 			</button>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<button>
 				<condition var1="shrp_lite" op="=" var2="0"/>
 				<placement x="464" y="1496"/>
@@ -53,6 +56,11 @@
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
 				<text>{@c_file_busy=Please Wait}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="cnfrmHeadTitle">
 				<condition var1="themeProcessErr" op="=" var2="1"/>
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
@@ -109,6 +117,10 @@
 				<placement x="0" y="%rndPos90%" w="1080" h="%rndPos38%"/>
 				<fill color="%backgroundColor%"/>
 			</button>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="cnfrmHeadTitle">
 				<condition var1="themeProcessErr" op="=" var2="0"/>
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
@@ -150,6 +162,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos9%"/>
 				<text>{@c_customization=Customization}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<checkbox>
 				<placement x="%c_hawk_base_column%" y="%rPos17%"/>
 				<image checked="goodSign" unchecked="goodSign"/>
@@ -274,7 +290,10 @@ rm -r /tmp/bak;
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
 				<text>{@chooseClr=Choose color}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<!--
 				8 >>  y=1518    x=53, 177, 302, 427, 552, 677, 801, 927 
 				8 >>  y=1642	x=53, 177, 302, 427, 552, 677, 801, 927 
@@ -476,7 +495,10 @@ rm -r /tmp/bak;
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
 				<text>{@chooseClr=Choose color}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<!--
 				8 >>  y=1518    x=53, 177, 302, 427, 552, 677, 801, 927 
 				8 >>  y=1642	x=53, 177, 302, 427, 552, 677, 801, 927 
@@ -587,7 +609,10 @@ rm -r /tmp/bak;
 				<text>{@c_status_bar=Status bar}</text>
 				<data variable="statusBarEnabled"/>
 			</checkbox>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos27%"/>
 				<text>{@showHideComponents=Show/Hide components}</text>
@@ -643,7 +668,10 @@ rm -r /tmp/bak;
 				<text>{@c_show_lc=Show date on lockscreen}</text>
 				<data variable="c_dateview"/>
 			</checkbox>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos27%"/>
 				<text>{@moreCustomizations=More customizations}</text>
@@ -696,7 +724,10 @@ rm -r /tmp/bak;
 				<text>{@c_nav_bg=Nav-Bar Background}</text>
 				<data variable="navbarBackgroundEnabled"/>
 			</checkbox>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos27%"/>
 				<text>{@c_nav_s=Nav-bar style}</text>
@@ -781,7 +812,10 @@ rm -r /tmp/bak;
 				<placement x="%c_hawk_base_column%" y="%rPos27%"/>
 				<text>{@c_batt_type=Battery Icon Type}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<listbox style="scrolllist">
 				<placement x="%c_hawk_base_column%" y="%rPos31%" w="%file_selector_default_w%" h="670"/>
 				<icon selected="radio_true" unselected="radio_true"/>
@@ -832,7 +866,10 @@ rm -r /tmp/bak;
 				<text>{@dashboardTextClr=Dashboard text color}</text>
 				<data variable="dashboardTextColorEnabled"/>
 			</checkbox>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<checkbox>
 				<placement x="%c_hawk_base_column%" y="%rPos22%"/>
 				<image checked="toggleOn" unchecked="toggleOff"/>
@@ -936,7 +973,10 @@ rm -r /tmp/bak;
 				<placement x="%c_hawk_base_column%" y="%rPos27%"/>
 				<text>{@c_radius=Radius}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<listbox style="scrolllist">
 				<placement x="%c_hawk_base_column%" y="%rPos31%" w="%file_selector_default_w%" h="670"/>
 				<icon selected="radio_true" unselected="radio_true"/>

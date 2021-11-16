@@ -15,6 +15,12 @@
 					<action function="page">multiuser_warning</action>
 				</actions>
 			</action>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 			<text style="pageTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@backup_hdr=Backup}</text>
@@ -131,6 +137,12 @@
 			<action>
 				<action function="page">backupname2</action>
 			</action>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 		</page>
 
 		<page name="backupname2">
@@ -151,6 +163,11 @@
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
 				<text>{@backup_hdr=Backup} {@name=Name:}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<fill color="subBackgroundColor">
 				<placement x="50" y="%rPos24%" w="970" h="94"/>
@@ -209,6 +226,10 @@
 				<text>{@c_encrypt_ques=Encrypt your Backup?}</text>
 			</text>
 
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
@@ -285,7 +306,11 @@
 				<image resource="c_clear_input"/>
 				<action function="clearInput">tw_backup_password2;backupencryption2</action>
 			</button>
-			
+
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>			
 
 			<template name="keyboardtemplate"/>
 
@@ -314,6 +339,12 @@
 					<action function="page">backup</action>
 				</actions>
 			</action>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 			<action>
 				<condition var1="tw_backup_password2" op="!=" var2="tw_backup_password"/>
 				<actions>
@@ -355,6 +386,12 @@
 			<action>
 				<action function="nandroid">backup</action>
 			</action>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 			<action>
 				<condition var1="tw_operation_state" var2="1"/>
 				<condition var1="tw_cancel_backup" var2="0"/>

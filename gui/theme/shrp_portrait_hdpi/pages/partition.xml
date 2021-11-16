@@ -13,7 +13,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@invalid_partsd_sel=You must select a removable device}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
 				<text>{@select_storage_hdr=Select Storage}</text>
@@ -52,7 +55,10 @@
 					<action function="page">partsdcard</action>
 				</actions>
 			</action>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<action>
 				<condition var1="tw_partition_removable" op="!=" var2="1"/>
 				<actions>
@@ -76,7 +82,10 @@
 				<text>{@part_sd_lose=You will lose all files on your SD card!}</text>
 				<text>{@part_sd_undo=This action cannot be undone!}</text>
 			</textbox>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos22%"/>

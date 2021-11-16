@@ -12,6 +12,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@factory_reset_hdr=Factory Reset}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<textbox>
 				<placement x="%c_hawk_base_column%" y="%rPos18%" w="%c_console_width%" h="500"/>
 				<text>{@factory_reset1=Wipes Data, Cache, and Dalvik} {@factory_reset2=(not including internal storage)}. {@c_fact_last=Most of the time this is the only wipe that you need.} {@c_action_cancel=Press back button to cancel.}</text>
@@ -107,6 +111,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_reset=Do you want to reset your phone?}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<button>
 				<placement x="860" y="%rndPos105%"/>
 				<image resource="c_ok"/>
@@ -137,6 +145,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_format_data=Format Data}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="pageSubTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_format_data_info=Are you sure?}</text>
@@ -194,7 +206,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@sel_part_wipe=Select Partitions to Wipe:}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
 				<text>{@partitions=Partitions:}</text>
@@ -257,7 +272,10 @@
 					<action function="page">action_page</action>
 				</actions>
 			</action>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<action>
 				<condition var1="tw_confirm_formatdata" op="!=" var2="yes"/>
 				<action function="page">formatdata</action>
@@ -273,7 +291,10 @@
 					<action function="page">partitionoptions</action>
 				</actions>
 			</action>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<action>
 				<condition var1="tw_check_partition_list" op="!=" var2="1"/>
 				<actions>
@@ -295,7 +316,10 @@
 				<text>{@c_warning_head_info=Do it carefully}</text>
 			</text>
 
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 
 			<text style="subOptionTitle">
@@ -446,7 +470,10 @@
 					<action function="page">selectfilesystem</action>
 				</actions>
 			</action>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<action>
 				<condition var1="tw_check_partition_list" op="!=" var2="1"/>
 				<actions>
@@ -468,6 +495,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@change_fs_for_hdr=Change File System for: %tw_partition_name%}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<textbox>
 				<placement x="%c_hawk_base_column%" y="%rPos18%" w="%c_console_width%" h="500"/>
 				<font resource="paragraph" color="#FF0000"/>

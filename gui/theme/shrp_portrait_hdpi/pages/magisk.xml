@@ -11,7 +11,10 @@
 				<text>{@c_magisk_m=Magisk Manager}</text>
 			</button>
 
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<button>
 				<condition var1="c_magisk_status" op="=" var2="0"/>
@@ -55,6 +58,11 @@ sh init;
 				<placement x="%c_hawk_base_column%" y="%rPos9%"/>
 				<text>{@c_magisk_m=Magisk Manager}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<checkbox>
 				<conditions>
 					<condition var1="c_magisk_status" op="!=" var2="1"/>
@@ -338,7 +346,10 @@ sh exit
 				<placement x="0" y="%rndPos50%" w="1080" h="%rndPos78%"/>
 				<fill color="%backgroundColor%"/>
 			</button>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="cnfrmHeadTitle">
 				<condition var1="magiskModule" op="=" var2="1"/>
 				<placement x="%c_hawk_base_column%" y="%rndPos54%"/>
@@ -381,6 +392,10 @@ sh exit
 				<text>{@c_enabled=Enabled}</text>
 				<data variable="dummy"/>
 			</checkbox>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<checkbox>
 				<condition var1="moduleEnabled" op="!=" var2="1"/>
 				<placement x="%c_hawk_base_column%" y="%rPos17%"/>
@@ -482,6 +497,10 @@ sh exit
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
 				<text>{@moduleUninstall=Uninstall module}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<textbox>
 				<placement x="%c_hawk_base_column%" y="%rndPos100%" w="%c_console_width%" h="400"/>
 				<text>{@confirm_action=Confirm Action}</text>

@@ -12,6 +12,11 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@copying_log=Copy Logs to SD Card}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<checkbox>
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>

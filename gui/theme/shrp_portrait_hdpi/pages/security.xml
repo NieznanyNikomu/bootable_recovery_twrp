@@ -9,6 +9,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos9%"/>
 				<text>{@c_security=Security}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<checkbox>
 				<condition var1="recLockStatus" op="=" var2="0"/>
 				<placement x="%c_hawk_base_column%" y="%rPos17%"/>
@@ -105,7 +109,10 @@
 				<text>{@c_password=Password}</text>
 			</text>
 
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
 				<text>{@c_enter_pass=Enter Password}</text>
@@ -162,7 +169,10 @@
 				<text>{@c_password=Password}</text>
 			</text>
 
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
 				<text>{@enter_pass_again=Enter Password Again}</text>
@@ -216,7 +226,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_password=Password}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
@@ -275,6 +288,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_patt_new_info=Enter your new Pattern}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="warnInfoText">
 				<condition var1="lockVal_notMatched" var2="1"/>
 				<placement x="60" y="-20" yref="%rPos19%" yop="+"/>
@@ -314,6 +331,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_patt_new_info_2=Enter your new Pattern again}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<patternpassword>
 				<placement x="%pattern_x%" y="%rPos31%" w="%pattern_size%" h="%pattern_size%"/>
 				<dot color="%secondaryColor%" activecolor="%secondaryColor%" radius="%pattern_dot_dia%"/>
@@ -348,6 +369,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_security=Security}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="pageSubTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@enter_patt_old=Enter your old Pattern}</text>
@@ -393,8 +418,12 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_file_busy_info=Processing}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
-            <action>
+            		<action>
 				<condition var1="lockReset" var2="0"/>
 				<actions>
 					<action function="set_lock">%lockType%</action>
@@ -423,6 +452,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_passed_info=You have successfully set your password}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="pageSubTitle">
 				<conditions>
 					<condition var1="lockType" op="=" var2="2"/>

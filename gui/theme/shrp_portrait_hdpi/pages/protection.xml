@@ -10,6 +10,10 @@
 				</actions>
 			</action>
 			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			<action>
 				<condition var1="recLockStatus" op="=" var2="2"/>
 				<actions>
 					<action function="stopmtp"/>
@@ -39,6 +43,10 @@
 				<placement x="60" y="-20" yref="%rPos19%" yop="+"/>
 				<text>{@c_patt_failed_info=Incorrect Pattern.Try again.}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<patternpassword>
 				<placement x="%pattern_x%" y="%rPos31%" w="%pattern_size%" h="%pattern_size%"/>
 				<dot color="%secondaryColor%" activecolor="%secondaryColor%" radius="%pattern_dot_dia%"/>
@@ -59,7 +67,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@pass_info=Your recovery is password protected}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
 				<text>{@c_enter_pass=Enter Password}</text>
@@ -95,6 +106,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_failed=Failed}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="pageSubTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_failed_info_blocked=Something went wrong}</text>

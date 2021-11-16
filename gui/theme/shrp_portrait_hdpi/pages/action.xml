@@ -13,6 +13,10 @@
 				<text>%tw_text1%</text>
 			</text>
 
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<button>
 				<condition var1="c_magisk_status" op="=" var2="1"/>
@@ -64,6 +68,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>%tw_text1%</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<textbox>
 				<placement x="%c_hawk_base_column%" y="%rPos18%" w="%c_console_width%" h="500"/>
 				<text>%tw_text2%</text>
@@ -102,6 +110,11 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>%tw_action_text2%</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<template name="c_console_custom"/>
 			<template name="progress_bar"/>
@@ -145,6 +158,11 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>%tw_action_text2%</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<template name="c_console_custom"/>
 			<template name="progress_bar"/>
@@ -180,6 +198,12 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_failed=Failed}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 			<text style="pageTitle">
 				<condition var1="tw_operation_status" var2="0"/>
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
@@ -212,6 +236,11 @@
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
 				<text>{@options_hdr=Options}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<button>
 				<placement x="130" y="%rndPos102%"/>

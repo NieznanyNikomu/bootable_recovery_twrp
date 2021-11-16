@@ -8,7 +8,10 @@
 				<touch key="home"/>
 				<action function="overlay"/>
 			</action>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<action>
 				<touch key="back"/>
 				<action function="overlay"/>
@@ -21,7 +24,10 @@
 				<touch key="home"/>
 				<action function="overlay"/>
 			</action>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<action>
 				<touch key="back"/>
 				<action function="overlay"/>
@@ -39,7 +45,10 @@
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
 				<text>{@changeSlot=Change Slot}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="textbox">
 				<placement x="%c_hawk_base_column%" y="%rndPos100%"/>
 				<text>{@changeSlotQuestion=Want to change the slot to }%tw_action_param%?</text>

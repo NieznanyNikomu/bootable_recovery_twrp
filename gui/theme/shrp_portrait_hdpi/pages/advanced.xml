@@ -10,7 +10,10 @@
 				<image resource="SKYHAWK"/>
 			</image>
 
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<text style="dashboardHeader">
 				<placement x="%c_hawk_base_column%" y="%rPos17%"/>
@@ -209,6 +212,12 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@advanced_btn=Advanced}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 			<text style="pageSubTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@adb_sideload_btn=ADB Sideload}</text>
@@ -264,6 +273,12 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@advanced_btn=Advanced}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 			<text style="pageSubTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@fix_context_btn=Fix Contexts}</text>
@@ -310,6 +325,12 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@decrypt_users_selection=Select a user ID to decrypt}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 			<listbox>
 				<placement x="%c_hawk_base_column%" y="%rPos18%" w="%file_selector_default_w%" h="%revPos97%"/>
 				<icon selected="c_usersRadioOn" unselected="c_usersRadioOff" />
@@ -349,6 +370,10 @@
 			</text>
 			<!--template name="c_tab_backup"/-->
 
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>

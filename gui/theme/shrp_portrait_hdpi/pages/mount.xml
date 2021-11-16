@@ -8,6 +8,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@mount_hdr=Mount}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="pageSubTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@storage_hdr=Storage: %tw_storage_display_name% (%tw_storage_free_size% MB)}</text>
@@ -124,6 +128,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@usb_stor_mnt1=USB Storage Mounted}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<textbox>
 				<placement x="%c_hawk_base_column%" y="%rPos18%" w="%c_console_width%" h="200"/>
 				<text>{@c_usb_last=Be sure to safely remove your device from your computer before unmounting!}</text>
@@ -146,7 +154,10 @@
 			<action>
 				<action function="unmount">usb</action>
 			</action>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<action>
 				<action function="page">mount</action>
 				<action function="set">tw_busy=0</action>
@@ -157,7 +168,10 @@
 			<action>
 				<action function="checkpartitionlifetimewrites">/system</action>
 			</action>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<action>
 				<condition var1="tw_lifetime_writes" var2="1"/>
 				<actions>
@@ -182,7 +196,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@sys_ro_keep=Keep System Read only?}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<textbox>
 				<placement x="%c_hawk_base_column%" y="%rPos12%" w="%c_console_width%" h="400"/>
 				<text>{@sys_rop1=TWRP can leave your system partition unmodified} {@sys_rop2=to make it easier for you to take official updates.} </text>
@@ -227,7 +244,10 @@
 				<condition var1="tw_crypto_pwtype" var2="2"/>
 				<action function="page">decrypt_pattern</action>
 			</action>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="pageTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@mount_btn=Mount}</text>
@@ -298,7 +318,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@decrypt_data_btn=Decrypt Data}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="pageSubTitle">
 				<condition var1="tw_is_fbe" op="!=" var2="1"/>
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
@@ -370,7 +393,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@restore_try_decrypt_s=Trying Decryption}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<template name="c_console_custom"/>
 			<template name="progress_bar"/>
 
@@ -412,7 +438,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@refresh_sizes_btn=Refresh Sizes}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<template name="c_console_custom"/>
 
 			<template name="progress_bar"/>

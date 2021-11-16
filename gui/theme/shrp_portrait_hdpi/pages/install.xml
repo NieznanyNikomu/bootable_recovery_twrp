@@ -6,6 +6,11 @@
 			<template name="c_status_bar"/>
 			<template name="c_simple_sort"/>
 
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 			<text style="pageTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_flash=Flash}</text>
@@ -64,6 +69,12 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_flash_zip=Flash Zip}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 			<text style="pageSubTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@zip_queue_count=%tw_zip_queue_count% of max of 10 Files queued}</text>
@@ -182,6 +193,11 @@
 				<action function="screenshot"/>
 			</action>
 
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+
 			<button>
 				<placement x="0" y="%rndPos90%" w="1080" h="%rndPos38%"/>
 				<fill color="%backgroundColor%"/>
@@ -220,6 +236,11 @@
 				<text>{@install_zip_count_hdr=Flash Zip %tw_zip_index% of %tw_zip_queue_count%}</text>
 			</text>
 
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 			<text style="pageSubTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>%tw_file%</text>
@@ -248,7 +269,11 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@install_sel_target=Select Target Partition}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 			<partitionlist>
 				<placement x="50" y="%rPos19%" w="%file_selector_default_w%" h="%revPos47%"/>
 				<icon selected="radio_true" unselected="radio_false"/>
@@ -315,6 +340,11 @@
 				<text>{@c_confirm=Confirm}</text>
 			</text>
 
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
 			<text style="textbox">
 				<placement x="%c_hawk_base_column%" y="%rndPos100%"/>
 				<text>{@confirm_flash_hdr=Confirm Flash}</text>
@@ -353,7 +383,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_failed=Failed}</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text style="pageTitle">
 				<condition var1="tw_operation_status" var2="0"/>
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
@@ -414,7 +447,10 @@
 					<action function="page">flash_done</action>
 				</actions>
 			</button>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<action>
 				<conditions>
 					<condition var1="tw_sleep" var2="tw_sleep_total"/>

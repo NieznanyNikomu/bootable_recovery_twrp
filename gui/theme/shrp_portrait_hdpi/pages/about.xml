@@ -9,6 +9,11 @@
 				<placement x="%c_hawk_base_column%" y="%rPos9%"/>
 				<text>{@c_shrp_about=S H R P}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<checkbox>
 				<conditions>
@@ -123,6 +128,11 @@
 				<placement x="%c_hawk_base_column%" y="%rPos9%"/>
 				<text>{@c_moreInfo=More Info}</text>
 			</text>
+			
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<checkbox>
 				<placement x="%c_hawk_base_column%" y="%rPos17%"/>
