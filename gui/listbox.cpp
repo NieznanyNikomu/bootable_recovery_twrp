@@ -291,6 +291,177 @@ GUIListBox::GUIListBox(xml_node<>* node) : GUIScrollList(node)
 				addons.push_back(aItem);
 #endif
 			}
+			{
+#ifdef SHRP_EXTERNAL_ADDON_7_NAME
+				addonInfo aItem;
+				aItem.name=EXPAND(SHRP_EXTERNAL_ADDON_7_NAME);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_7_INFO
+				aItem.info=EXPAND(SHRP_EXTERNAL_ADDON_7_INFO);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_7_BTN_TEXT
+				aItem.confirmBtnText=EXPAND(SHRP_EXTERNAL_ADDON_7_BTN_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_7_SUCCESSFUL_TEXT
+				aItem.successfulText=EXPAND(SHRP_EXTERNAL_ADDON_7_SUCCESSFUL_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_7_FILENAME
+				aItem.fileName=EXPAND(SHRP_EXTERNAL_ADDON_7_FILENAME);
+				addons.push_back(aItem);
+#endif
+			}
+			{
+#ifdef SHRP_EXTERNAL_ADDON_8_NAME
+				addonInfo aItem;
+				aItem.name=EXPAND(SHRP_EXTERNAL_ADDON_8_NAME);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_8_INFO
+				aItem.info=EXPAND(SHRP_EXTERNAL_ADDON_8_INFO);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_8_BTN_TEXT
+				aItem.confirmBtnText=EXPAND(SHRP_EXTERNAL_ADDON_8_BTN_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_8_SUCCESSFUL_TEXT
+				aItem.successfulText=EXPAND(SHRP_EXTERNAL_ADDON_8_SUCCESSFUL_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_8_FILENAME
+				aItem.fileName=EXPAND(SHRP_EXTERNAL_ADDON_8_FILENAME);
+				addons.push_back(aItem);
+#endif
+			}
+			{
+#ifdef SHRP_EXTERNAL_ADDON_9_NAME
+				addonInfo aItem;
+				aItem.name=EXPAND(SHRP_EXTERNAL_ADDON_9_NAME);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_9_INFO
+				aItem.info=EXPAND(SHRP_EXTERNAL_ADDON_9_INFO);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_9_BTN_TEXT
+				aItem.confirmBtnText=EXPAND(SHRP_EXTERNAL_ADDON_9_BTN_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_9_SUCCESSFUL_TEXT
+				aItem.successfulText=EXPAND(SHRP_EXTERNAL_ADDON_9_SUCCESSFUL_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_9_FILENAME
+				aItem.fileName=EXPAND(SHRP_EXTERNAL_ADDON_9_FILENAME);
+				addons.push_back(aItem);
+#endif
+			}
+			{
+#ifdef SHRP_EXTERNAL_ADDON_10_NAME
+				addonInfo aItem;
+				aItem.name=EXPAND(SHRP_EXTERNAL_ADDON_10_NAME);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_10_INFO
+				aItem.info=EXPAND(SHRP_EXTERNAL_ADDON_10_INFO);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_10_BTN_TEXT
+				aItem.confirmBtnText=EXPAND(SHRP_EXTERNAL_ADDON_10_BTN_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_10_SUCCESSFUL_TEXT
+				aItem.successfulText=EXPAND(SHRP_EXTERNAL_ADDON_10_SUCCESSFUL_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_10_FILENAME
+				aItem.fileName=EXPAND(SHRP_EXTERNAL_ADDON_10_FILENAME);
+				addons.push_back(aItem);
+#endif
+			}
+			{
+#ifdef SHRP_EXTERNAL_ADDON_11_NAME
+				addonInfo aItem;
+				aItem.name=EXPAND(SHRP_EXTERNAL_ADDON_11_NAME);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_11_INFO
+				aItem.info=EXPAND(SHRP_EXTERNAL_ADDON_11_INFO);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_11_BTN_TEXT
+				aItem.confirmBtnText=EXPAND(SHRP_EXTERNAL_ADDON_11_BTN_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_11_SUCCESSFUL_TEXT
+				aItem.successfulText=EXPAND(SHRP_EXTERNAL_ADDON_11_SUCCESSFUL_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_11_FILENAME
+				aItem.fileName=EXPAND(SHRP_EXTERNAL_ADDON_11_FILENAME);
+				addons.push_back(aItem);
+#endif
+			}
+			{
+#ifdef SHRP_EXTERNAL_ADDON_12_NAME
+				addonInfo aItem;
+				aItem.name=EXPAND(SHRP_EXTERNAL_ADDON_12_NAME);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_12_INFO
+				aItem.info=EXPAND(SHRP_EXTERNAL_ADDON_12_INFO);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_12_BTN_TEXT
+				aItem.confirmBtnText=EXPAND(SHRP_EXTERNAL_ADDON_12_BTN_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_12_SUCCESSFUL_TEXT
+				aItem.successfulText=EXPAND(SHRP_EXTERNAL_ADDON_12_SUCCESSFUL_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_12_FILENAME
+				aItem.fileName=EXPAND(SHRP_EXTERNAL_ADDON_12_FILENAME);
+				addons.push_back(aItem);
+#endif
+			}
+			{
+#ifdef SHRP_EXTERNAL_ADDON_13_NAME
+				addonInfo aItem;
+				aItem.name=EXPAND(SHRP_EXTERNAL_ADDON_13_NAME);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_13_INFO
+				aItem.info=EXPAND(SHRP_EXTERNAL_ADDON_13_INFO);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_13_BTN_TEXT
+				aItem.confirmBtnText=EXPAND(SHRP_EXTERNAL_ADDON_13_BTN_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_13_SUCCESSFUL_TEXT
+				aItem.successfulText=EXPAND(SHRP_EXTERNAL_ADDON_13_SUCCESSFUL_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_13_FILENAME
+				aItem.fileName=EXPAND(SHRP_EXTERNAL_ADDON_13_FILENAME);
+				addons.push_back(aItem);
+#endif
+			}
+			{
+#ifdef SHRP_EXTERNAL_ADDON_14_NAME
+				addonInfo aItem;
+				aItem.name=EXPAND(SHRP_EXTERNAL_ADDON_14_NAME);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_14_INFO
+				aItem.info=EXPAND(SHRP_EXTERNAL_ADDON_14_INFO);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_14_BTN_TEXT
+				aItem.confirmBtnText=EXPAND(SHRP_EXTERNAL_ADDON_14_BTN_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_14_SUCCESSFUL_TEXT
+				aItem.successfulText=EXPAND(SHRP_EXTERNAL_ADDON_14_SUCCESSFUL_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_14_FILENAME
+				aItem.fileName=EXPAND(SHRP_EXTERNAL_ADDON_14_FILENAME);
+				addons.push_back(aItem);
+#endif
+			}
+			{
+#ifdef SHRP_EXTERNAL_ADDON_15_NAME
+				addonInfo aItem;
+				aItem.name=EXPAND(SHRP_EXTERNAL_ADDON_15_NAME);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_15_INFO
+				aItem.info=EXPAND(SHRP_EXTERNAL_ADDON_15_INFO);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_15_BTN_TEXT
+				aItem.confirmBtnText=EXPAND(SHRP_EXTERNAL_ADDON_15_BTN_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_15_SUCCESSFUL_TEXT
+				aItem.successfulText=EXPAND(SHRP_EXTERNAL_ADDON_15_SUCCESSFUL_TEXT);
+#endif
+#ifdef SHRP_EXTERNAL_ADDON_15_FILENAME
+				aItem.fileName=EXPAND(SHRP_EXTERNAL_ADDON_15_FILENAME);
+				addons.push_back(aItem);
+#endif
+			}
 			mListItems.clear();
 			for(auto ptr=addons.begin(); ptr<addons.end(); ptr++){
 				ListItem data;
