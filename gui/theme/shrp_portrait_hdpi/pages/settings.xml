@@ -9,7 +9,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@settings_btn=Settings}</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -151,7 +154,10 @@
 				<font resource="extraLargeBoldProPlus" color="%primaryColor%"/>
 				<text>%tw_time%</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -265,7 +271,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_device=Device}</text>
 			</text>
-			
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -404,7 +413,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>S H R P</text>
 			</text>
-			
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -484,7 +496,10 @@
 				<placement x="0" y="%rndPos84%" w="1080" h="%rndPos45%"/>
 				<fill color="%backgroundColor%"/>
 			</button>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="cnfrmHeadTitle">
 				<placement x="%c_hawk_base_column%" y="%rndPos88%"/>
 				<text>{@sel_tz_offset=Select Offset (usually 0): %tw_time_zone_guioffset%}</text>
@@ -521,7 +536,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@settings_language_btn=Language}</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>

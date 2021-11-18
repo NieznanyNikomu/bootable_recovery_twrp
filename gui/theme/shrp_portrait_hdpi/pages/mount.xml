@@ -9,6 +9,10 @@
 				<text>{@mount_hdr=Mount}</text>
 			</text>
 			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
@@ -129,6 +133,10 @@
 				<text>{@usb_stor_mnt1=USB Storage Mounted}</text>
 			</text>
 			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
@@ -155,6 +163,10 @@
 				<action function="unmount">usb</action>
 			</action>
 			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
@@ -172,6 +184,10 @@
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<condition var1="tw_lifetime_writes" var2="1"/>
 				<actions>
@@ -196,6 +212,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@sys_ro_keep=Keep System Read only?}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -244,6 +264,10 @@
 				<condition var1="tw_crypto_pwtype" var2="2"/>
 				<action function="page">decrypt_pattern</action>
 			</action>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -322,6 +346,10 @@
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="pageSubTitle">
 				<condition var1="tw_is_fbe" op="!=" var2="1"/>
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
@@ -397,6 +425,10 @@
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<template name="c_console_custom"/>
 			<template name="progress_bar"/>
 
@@ -442,6 +474,10 @@
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<template name="c_console_custom"/>
 
 			<template name="progress_bar"/>

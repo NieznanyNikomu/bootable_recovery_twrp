@@ -12,11 +12,18 @@
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
 				<text>{@c_confirm=Confirm}</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<text style="textbox">
 				<placement x="%c_hawk_base_column%" y="%rndPos100%"/>
 				<text>{@fDeleteInfo=Do you really want to delete? This process cannot be undone.}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 
 			<button style="cnfrmBtn">
 				<placement x="700" y="%rndPos115%" w="310" h="110"/>
@@ -50,12 +57,18 @@
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
 				<text>{@changeSlot=Change Slot}</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<text style="textbox">
 				<placement x="%c_hawk_base_column%" y="%rndPos100%"/>
 				<text>{@changeSlotQuestion=Want to change the slot to }%tw_action_param%?</text>
 			</text>
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<button style="cnfrmBtn">
 				<placement x="700" y="%rndPos115%" w="310" h="110"/>
 				<fill color="%subBackgroundColor%"/>
@@ -150,6 +163,10 @@
 					<action function="restoredefaultsettings">guun</action>
 				</actions>
 			</button>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<button>
 				<placement x="860" y="1628"/>
 				<condition var1="av_express" var2="1"/>
@@ -171,6 +188,10 @@
 			<action>
 				<touch key="back"/>
 				<action function="page">c_refresh</action>
+			</action>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
 			</action>
 		</page>
 
@@ -218,6 +239,10 @@
 				<data variable="tw_time_zone_guidst"/>
 				<image checked="checkbox_true" unchecked="checkbox_false"/>
 			</checkbox>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<text>
 				<font resource="font_m" color="%c_black%"/>
 				<placement x="%c_hawk_base_column%" y="1220"/>
@@ -247,6 +272,10 @@
 				<touch key="back"/>
 				<action function="page">c_refresh</action>
 			</action>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 		</page>
 
 		<page name="settings_device">
@@ -256,6 +285,10 @@
 				<placement x="%c_hawk_base_column%" y="%c_hawk_base_first_header%"/>
 				<text>{@c_device=Device}</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<template name="c_tab_settings"/>
 			<button>
 				<placement x="%c_hawk_base_column%" y="%c_text_sub_y_spec%" textplacement="6"/>
@@ -280,7 +313,10 @@
 				<placement x="%c_hawk_base_column%" y="%c_custom_pos_1%"/>
 				<text>{@screen_to_slider_s=Screen timeout in seconds (0=disabled): %tw_screen_timeout_secs%}</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<slidervalue>
 				<condition var1="tw_screen_timeout_secs" op="!=" var2="0"/>
 				<condition var1="tw_no_screen_timeout" op="!=" var2="1"/>
@@ -354,6 +390,14 @@
 				<placement x="%c_hawk_base_column%" y="%c_hawk_base_first_header%"/>
 				<text>SHRP</text>
 			</text>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<template name="c_tab_settings"/>
 			<listbox style="scrolllist">
 				<placement x="%c_hawk_base_column%" y="%c_text_sub_y2%" w="%file_selector_default_w%" h="%settings_main_list_h%"/>
@@ -400,14 +444,20 @@
 				<icon selected="radio_true" unselected="radio_false" />
 				<data name="tw_language" />
 			</listbox>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<button>
 				<placement x="860" y="1628"/>
 				<image resource="c_ok"/>
 				<action function="setlanguage"></action>
 			</button>
 
-
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
 			<action>
 				<touch key="home" />
 				<action function="page">c_refresh</action>

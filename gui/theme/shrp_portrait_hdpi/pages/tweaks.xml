@@ -12,6 +12,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_tweaks=Tweaks}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="pageSubTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_tweaks_info=Collection of tweaks}</text>
@@ -61,6 +65,10 @@
 				<placement x="0" y="%rndPos90%" w="1080" h="%rndPos38%"/>
 				<fill color="%backgroundColor%"/>
 			</button>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="cnfrmHeadTitle">
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
 				<text>%shrpTweakName%</text>

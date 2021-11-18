@@ -10,7 +10,10 @@
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
-			
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="pageTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_flash=Flash}</text>
@@ -69,7 +72,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_flash_zip=Flash Zip}</text>
 			</text>
-			
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -184,6 +190,10 @@
 				<action function="page">flash_confirm</action>
 			</button>
 			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
 				<touch key="power"/>
 				<action function="togglebacklight"/>
 			</action>
@@ -235,7 +245,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@install_zip_count_hdr=Flash Zip %tw_zip_index% of %tw_zip_queue_count%}</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -264,7 +277,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_flash_img=Flash Image}</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="pageSubTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@install_sel_target=Select Target Partition}</text>
@@ -339,7 +355,10 @@
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
 				<text>{@c_confirm=Confirm}</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -392,7 +411,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_passed=Successful}</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<action function="set">tw_active_slot_install=0</action>
 				<action function="set">tw_inject_after_zip=0</action>
@@ -458,7 +480,10 @@
 				</conditions>
 				<action function="sleepcounter">%tw_sleep_total%</action>
 			</action>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<conditions>
 					<condition var1="tw_sleep" var2="0"/>

@@ -19,7 +19,10 @@
 					<action function="page">%tw_existpage%</action>
 				</actions>
 			</action>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<conditions>
 					<condition var1="tw_operation_state" var2="1"/>
@@ -42,6 +45,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_terminal_info=Type Terminal Command}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -175,6 +182,10 @@
 				<text>{@multiuser_warning_hdr=Multiuser Warning}</text>
 			</text>
 			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
@@ -228,6 +239,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>S H R P</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>

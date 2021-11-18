@@ -18,7 +18,10 @@
 				<data name="tw_storage_path"/>
 				<listtype name="storage"/>
 			</partitionlist>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 
 			<action>
 				<touch key="power+voldown"/>
@@ -40,7 +43,10 @@
 			<console>
 				<placement x="%c_hawk_base_column%" y="%rPos12%" w="%c_console_width%" h="%revPos64%"/>
 			</console>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 
 			<fill color="%subBackgroundColor%">
 				<placement x="48" y="1160" h="610" w="980"/>

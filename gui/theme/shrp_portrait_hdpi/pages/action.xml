@@ -12,7 +12,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>%tw_text1%</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -78,7 +81,10 @@
 				<text>%tw_text3%</text>
 				<text>%tw_text4%</text>
 			</textbox>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 
 			<button>
 				<image resource="c_ok"/>
@@ -110,7 +116,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>%tw_action_text2%</text>
 			</text>
-			
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -158,7 +167,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>%tw_action_text2%</text>
 			</text>
-			
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -198,7 +210,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_failed=Failed}</text>
 			</text>
-			
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -236,7 +251,10 @@
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
 				<text>{@options_hdr=Options}</text>
 			</text>
-			
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>

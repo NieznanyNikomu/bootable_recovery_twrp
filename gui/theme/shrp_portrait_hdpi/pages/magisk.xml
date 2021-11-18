@@ -15,7 +15,10 @@
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<button>
 				<condition var1="c_magisk_status" op="=" var2="0"/>
 				<placement x="464" y="1496"/>
@@ -58,7 +61,10 @@ sh init;
 				<placement x="%c_hawk_base_column%" y="%rPos9%"/>
 				<text>{@c_magisk_m=Magisk Manager}</text>
 			</text>
-			
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -266,51 +272,6 @@ sh c_core_only_enabler;
 					</actions>
 				</listitem>
 
-
-				<listitem name="{@c_unroot=Unroot}">
-					<conditions>
-					    <condition var1="exclude_magisk_flash" var2="1"/>
-						<condition var1="shrpMagiskUnroot" op="=" var2="1"/>
-						<condition var1="magisk_in_rec" op="=" var2="1"/>
-					</conditions>
-					<icon resource="uninstallSign"/>
-					<data variable="dummy"/>
-					<actions>
-						<action function="set">tw_back=magiskDashboard</action>
-						<action function="set">tw_filename=/twres/addons/unmagisk.zip</action>
-						<action function="set">tw_action=cmd</action>
-						<action function="set">tw_action_param=cd /twres/magisk/;sh exit;cd /;umount -l _magisk;rm -rf _magisk;</action>
-						<action function="queuezip"/>
-						<action function="set">tw_has_action2=1</action>
-						<action function="set">tw_action2=flash</action>
-						<action function="set">tw_action2_param=flash_zip</action>
-						<action function="set">tw_text1={@confirm_flash_hdr=Confirm Flash}</action>
-						<action function="set">tw_complete_text1={@done=Done}</action>
-						<action function="page">magisk_action</action>
-					</actions>
-				</listitem>
-				<listitem name="{@c_unroot=Unroot}">
-					<conditions>
-					    <condition var1="exclude_magisk_flash" var2="1"/>
-						<condition var1="shrpMagiskUnroot" op="=" var2="1"/>
-						<condition var1="magisk_in_rec" op="=" var2="0"/>
-					</conditions>
-					<icon resource="uninstallSign"/>
-					<data variable="dummy"/>
-					<actions>
-						<action function="set">tw_back=magiskDashboard</action>
-						<action function="set">tw_filename=/sdcard/SHRP/addons/unmagisk.zip</action>
-						<action function="set">tw_action=cmd</action>
-						<action function="set">tw_action_param=cd /twres/magisk/;sh exit;cd /;umount -l _magisk;rm -rf _magisk;</action>
-						<action function="queuezip"/>
-						<action function="set">tw_has_action2=1</action>
-						<action function="set">tw_action2=flash</action>
-						<action function="set">tw_action2_param=flash_zip</action>
-						<action function="set">tw_text1={@confirm_flash_hdr=Confirm Flash}</action>
-						<action function="set">tw_complete_text1={@done=Done}</action>
-						<action function="page">magisk_action</action>
-					</actions>
-				</listitem>
 				<listitem name="{@magiskModules=Magisk modules}">
 					<icon resource="magiskModule"/>
 					<data variable="dummy"/>
@@ -403,7 +364,10 @@ sh exit
 				<text>{@c_disabled=Disabled}</text>
 				<data variable="dummy"/>
 			</checkbox>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos25%"/>
@@ -497,6 +461,10 @@ sh exit
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
 				<text>{@moduleUninstall=Uninstall module}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>

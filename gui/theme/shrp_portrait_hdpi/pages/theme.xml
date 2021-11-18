@@ -11,6 +11,10 @@
 				<text>{@c_theme=Theme}</text>
 			</button>
 			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
@@ -51,6 +55,10 @@
 				<placement x="0" y="%rndPos90%" w="1080" h="%rndPos38%"/>
 				<fill color="%backgroundColor%"/>
 			</button>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="cnfrmHeadTitle">
 				<condition var1="themeProcessErr" op="=" var2="-1"/>
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
@@ -118,6 +126,10 @@
 				<fill color="%backgroundColor%"/>
 			</button>
 			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
@@ -162,6 +174,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos9%"/>
 				<text>{@c_customization=Customization}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -290,6 +306,10 @@ rm -r /tmp/bak;
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
 				<text>{@chooseClr=Choose color}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -491,6 +511,10 @@ rm -r /tmp/bak;
 				<placement x="0" y="%rndPos90%" w="1080" h="%rndPos38%"/>
 				<fill color="%backgroundColor%"/>
 			</button>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="cnfrmHeadTitle">
 				<placement x="%c_hawk_base_column%" y="%rndPos94%"/>
 				<text>{@chooseClr=Choose color}</text>
@@ -603,6 +627,10 @@ rm -r /tmp/bak;
 				<placement x="%c_hawk_base_column%" y="%rPos9%"/>
 				<text>{@showHide=Show/Hide}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<checkbox>
 				<placement x="%c_hawk_base_column%" y="%rPos17%"/>
 				<image checked="toggleOn" unchecked="toggleOff"/>
@@ -662,6 +690,10 @@ rm -r /tmp/bak;
 				<placement x="%c_hawk_base_column%" y="%rPos9%"/>
 				<text>{@c_more=More}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<checkbox>
 				<placement x="%c_hawk_base_column%" y="%rPos17%"/>
 				<image checked="toggleOn" unchecked="toggleOff"/>
@@ -718,6 +750,10 @@ rm -r /tmp/bak;
 				<placement x="%c_hawk_base_column%" y="%rPos9%"/>
 				<text>{@navTxt=Nav-bar}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<checkbox>
 				<placement x="%c_hawk_base_column%" y="%rPos17%"/>
 				<image checked="toggleOn" unchecked="toggleOff"/>
@@ -801,6 +837,10 @@ rm -r /tmp/bak;
 				<placement x="%c_hawk_base_column%" y="%rPos9%"/>
 				<text>{@batteryTxt=Battery}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<checkbox>
 				<placement x="%c_hawk_base_column%" y="%rPos17%"/>
 				<image checked="toggleOn" unchecked="toggleOff"/>
@@ -860,6 +900,10 @@ rm -r /tmp/bak;
 				<placement x="%c_hawk_base_column%" y="%rPos9%"/>
 				<text>{@dashboardTxt=Dashboard}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<checkbox>
 				<placement x="%c_hawk_base_column%" y="%rPos17%"/>
 				<image checked="toggleOn" unchecked="toggleOff"/>
@@ -962,6 +1006,10 @@ rm -r /tmp/bak;
 				<placement x="%c_hawk_base_column%" y="%rPos9%"/>
 				<text>{@c_rounded_corner=Rounded Corner}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<checkbox>
 				<placement x="%c_hawk_base_column%" y="%rPos17%"/>
 				<image checked="toggleOn" unchecked="toggleOff"/>

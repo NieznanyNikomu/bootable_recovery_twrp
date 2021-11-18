@@ -12,14 +12,19 @@
 			
 			<text style="dashboardHeader">
 				<placement x="600" y="%rPos17%"/>
-				<text>By @shas45558</text>
+				<text>By %device_maintainer_name%</text>
 			</text>
 
 			<text style="dashboardHeader">
 				<placement x="%c_hawk_base_column%" y="%rPos17%"/>
 				<text>{@c_essentials=Essentials}</text>
 			</text>
-						
+			
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+					
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>

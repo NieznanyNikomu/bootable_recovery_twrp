@@ -13,6 +13,10 @@
 				<text>{@factory_reset_hdr=Factory Reset}</text>
 			</text>
 			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
@@ -107,6 +111,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@factory_reset_btn=Factory Reset}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="pageSubTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_reset=Do you want to reset your phone?}</text>
@@ -145,6 +153,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_format_data=Format Data}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -198,6 +210,10 @@
 			<action>
 				<action function="set">tw_wipe_list=</action>
 			</action>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="pageTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@advanced_wipe_hdr=Advance Wipe}</text>
@@ -277,6 +293,10 @@
 				<action function="flashlight"/>
 			</action>
 			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
 				<condition var1="tw_confirm_formatdata" op="!=" var2="yes"/>
 				<action function="page">formatdata</action>
 			</action>
@@ -295,6 +315,10 @@
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<condition var1="tw_check_partition_list" op="!=" var2="1"/>
 				<actions>
@@ -320,7 +344,10 @@
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
@@ -471,6 +498,10 @@
 				</actions>
 			</action>
 			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
@@ -495,6 +526,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@change_fs_for_hdr=Change File System for: %tw_partition_name%}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>

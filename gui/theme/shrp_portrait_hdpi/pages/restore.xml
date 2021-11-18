@@ -20,6 +20,10 @@
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="pageTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@restore_hdr=Restore}</text>
@@ -76,6 +80,10 @@
 				</actions>
 			</action>
 			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
@@ -106,6 +114,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
 				<text>{@enter_pass=Enter Password:}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<fill color="subBackgroundColor">
 				<placement x="50" y="%rPos24%" w="970" h="94"/>
 			</fill>
@@ -173,6 +185,10 @@
 				<text>{@restore_try_decrypt_s=Trying Decryption}</text>
 			</text>
 			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
@@ -215,6 +231,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@restore_backup_date=Backup made on %tw_restore_file_date%}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -307,7 +327,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@rename_backup_hdr=Rename Backup}</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 
 			<action>
 				<touch key="voldown"/>
@@ -385,6 +408,10 @@
 				<placement x="%c_hawk_base_column%" y="1430"/>
 				<text>{@progress=Progress:} %tw_size_progress%</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>

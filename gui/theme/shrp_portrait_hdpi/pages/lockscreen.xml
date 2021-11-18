@@ -28,7 +28,10 @@
 				<image resource="c_on_tap_unlock" highlightresource="c_on_tap_unlock_pressed"/>
 				<action function="overlay"/>
 			</button>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 
 			<template name="c_status_bar"/>
 

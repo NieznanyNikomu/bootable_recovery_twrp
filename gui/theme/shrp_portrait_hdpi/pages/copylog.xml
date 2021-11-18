@@ -17,7 +17,10 @@
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<checkbox>
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
 				<text>{@include_kernel_log=Include Kernel Log}</text>

@@ -27,7 +27,10 @@
 				<text>Recovery is protected</text>
 				<data variable="dummy"/>
 			</checkbox>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos27%"/>
@@ -168,7 +171,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_password=Password}</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -230,7 +236,10 @@
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
 				<text>{@enter_pass_old=Enter your old Password}</text>
@@ -297,6 +306,10 @@
 				<placement x="60" y="-20" yref="%rPos19%" yop="+"/>
 				<text>{@c_failed_same_info_patt=Both patterns do not match}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<patternpassword>
 				<placement x="%pattern_x%" y="%rPos31%" w="%pattern_size%" h="%pattern_size%"/>
 				<dot color="%secondaryColor%" activecolor="%secondaryColor%" radius="%pattern_dot_dia%"/>
@@ -335,6 +348,10 @@
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<patternpassword>
 				<placement x="%pattern_x%" y="%rPos31%" w="%pattern_size%" h="%pattern_size%"/>
 				<dot color="%secondaryColor%" activecolor="%secondaryColor%" radius="%pattern_dot_dia%"/>
@@ -377,6 +394,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@enter_patt_old=Enter your old Pattern}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="warnInfoText">
 				<condition var1="lockVal_notMatched" var2="1"/>
 				<placement x="60" y="-20" yref="%rPos19%" yop="+"/>
@@ -422,7 +443,10 @@
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
             		<action>
 				<condition var1="lockReset" var2="0"/>
 				<actions>
@@ -452,6 +476,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_passed_info=You have successfully set your password}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>

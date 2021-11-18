@@ -10,6 +10,10 @@
 				</actions>
 			</action>
 			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
@@ -38,6 +42,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@patt_info=Your recovery is pattern protected}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="warnInfoText">
 				<condition var1="passNotMatched" var2="1"/>
 				<placement x="60" y="-20" yref="%rPos19%" yop="+"/>
@@ -63,6 +71,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_enter_pass=Enter Password}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<text style="pageSubTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@pass_info=Your recovery is password protected}</text>
@@ -106,6 +118,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
 				<text>{@c_failed=Failed}</text>
 			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>

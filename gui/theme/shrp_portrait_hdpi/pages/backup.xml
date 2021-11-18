@@ -15,7 +15,10 @@
 					<action function="page">multiuser_warning</action>
 				</actions>
 			</action>
-			
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -137,7 +140,10 @@
 			<action>
 				<action function="page">backupname2</action>
 			</action>
-			
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -158,7 +164,10 @@
 			</text>
 			<!--template name="c_tab_backup"/-->
 
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
 				<text>{@backup_hdr=Backup} {@name=Name:}</text>
@@ -225,7 +234,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_encrypt_ques=Encrypt your Backup?}</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<action>
 				<touch key="voldown"/>
 				<action function="flashlight"/>
@@ -286,7 +298,10 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@c_encrypt_ques=Encrypt your Backup?}</text>
 			</text>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<text style="subOptionTitle">
 				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
 				<text>{@enter_pass_again=Enter Password again: }</text>
@@ -344,7 +359,10 @@
 				<touch key="voldown"/>
 				<action function="flashlight"/>
 			</action>
-			
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<action>
 				<condition var1="tw_backup_password2" op="!=" var2="tw_backup_password"/>
 				<actions>
@@ -382,7 +400,10 @@
 				<image resource="c_cancel"/>
 				<action function="cancelbackup"/>
 			</button>
-
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
 			<action>
 				<action function="nandroid">backup</action>
 			</action>
