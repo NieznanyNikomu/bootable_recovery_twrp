@@ -429,30 +429,21 @@
 				<condition var1="db" var2="1"/>
 				<placement x="343" y="%rPos68%"/>
 				<image resource="c_mod"/>
-				<actions>
-					<action function="shrp_init"/>
-					<action function="page">c_splash_theme</action>
-				</actions>
+
 			</button>
 			<button style="dashboardText">
 				<condition var1="db" var2="1"/>
 				<condition var1="dashboardTextColorEnabled" var2="1"/>
 				<placement x="313" y="%rPos78%" w="205" h="70"/>
 				<text>{@c_theme=Theme}</text>
-				<actions>
-					<action function="shrp_init"/>
-					<action function="page">c_splash_theme</action>
-				</actions>
+
 			</button>
 			<button style="dashboardText2">
 				<condition var1="db" var2="1"/>
 				<condition var1="dashboardTextColorEnabled" var2="0"/>
 				<placement x="313" y="%rPos78%" w="205" h="70"/>
 				<text>{@c_theme=Theme}</text>
-				<actions>
-					<action function="shrp_init"/>
-					<action function="page">c_splash_theme</action>
-				</actions>
+
 			</button>
 
 
@@ -662,10 +653,6 @@
 			
 				<listitem name="{@c_theme=  Theme}">
 					<icon resource="c_mod"/>
-				<actions>
-					<action function="shrp_init"/>
-					<action function="page">c_splash_theme</action>
-				</actions>
 				</listitem>
 
 				<listitem name="{@settings_btn=Settings}">
