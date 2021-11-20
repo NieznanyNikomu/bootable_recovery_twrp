@@ -66,6 +66,7 @@ void initSHRPVars(InfoManager* mConst, InfoManager* mData, InfoManager* mPersist
 	//SHRP_PERSISTED_VARS
 	mPersist->SetValue("c_temp2", "pepe");
 	mPersist->SetValue("c_dateview", "0");
+	mPersist->SetValue("db", "0");
 	mPersist->SetValue("c_devMode", "0");
 	mPersist->SetValue("c_shrpUpdate", "0");
 	mPersist->SetValue(REBOOTOTA_DISABLED, "1");

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<recovery>
+	<pages>
+		<page name="reboot">
+			<button>
+				<placement x="0" y="0" w="1080" h="1920"/>
+				<fill color="%semi_transparent%"/>
+				<action function="overlay"/>
+			</button>
+
+			<action>
+				<touch key="back"/>
+				<action function="page">main2</action>
+			</action>
+			<action>
+				<touch key="home"/>
+				<action function="page">main2</action>
+			</action>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>		
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			<button>
+				<placement x="450" y="%rPos35%"/>
+				<image resource="c_dashboard_reboot"/>
+			</button>
+			<listbox style="pp">
+			<placement x="340" y="%rPos45%" w="400" h="500"/>
+
+				<listitem name="{@rb_poweroff_btn=Power Off}">
+					<icon resource="c_power_off"/>
+					<actions>
+						<action function="set">tw_action=reboot</action>
+						<action function="set">tw_action_param=poweroff</action>
+						<action function="set">tw_reboot_param=poweroff</action>
+						<action function="reboot">%tw_reboot_param%</action>
+					</actions>
+				</listitem>
+				<listitem name="{@reboot_hdr=Reboot}">
+					<icon resource="c_reboot_to_system"/>
+					<actions>
+						<action function="set">tw_action=reboot</action>
+						<action function="set">tw_action_param=system</action>
+						<action function="set">tw_reboot_param=system</action>
+						<action function="reboot">%tw_reboot_param%</action>
+					</actions>
+				</listitem>
+				<listitem name="{@rb_recovery_btn=Recovery}">
+					<icon resource="c_reboot_to_recovery"/>
+					<actions>
+						<action function="set">tw_action=reboot</action>
+						<action function="set">tw_action_param=recovery</action>
+						<action function="set">tw_reboot_param=recovery</action>
+						<action function="reboot">%tw_reboot_param%</action>
+					</actions>
+				</listitem>
+				<listitem name="{@rb_bootloader_btn=Bootloader}">
+					<icon resource="c_reboot_to_bootloader"/>
+					<actions>
+						<action function="set">tw_action=reboot</action>
+						<action function="set">tw_action_param=bootloader</action>
+						<action function="set">tw_reboot_param=bootloader</action>
+						<action function="reboot">%tw_reboot_param%</action>
+					</actions>
+				</listitem>
+				<listitem name="Fastboot">
+					<icon resource="c_reboot_to_recovery"/>
+					<actions>
+						<action function="set">tw_action=reboot</action>
+						<action function="set">tw_action_param=fastboot</action>
+						<action function="set">tw_reboot_param=fastboot</action>
+						<action function="reboot">%tw_reboot_param%</action>
+					</actions>
+				</listitem>
+			</listbox>
+		</page>
+	</pages>
+</recovery>

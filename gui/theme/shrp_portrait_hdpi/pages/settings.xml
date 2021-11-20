@@ -22,11 +22,6 @@
 				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
 				<text>{@settings_gen_hdr=General} {@settings_btn=Settings}</text>
 			</text>
-			
-			<action>
-				<touch key="voldown"/>
-				<action function="flashlight"/>
-			</action>
 
 			<listbox style="scrolllist">
 				<placement x="%c_hawk_base_column%" y="%rPos19%" w="%file_selector_default_w%" h="%revPos100%"/>
@@ -446,6 +441,9 @@
 				<listitem name="{@c_magisk_install_after_ota=Install Magisk automatically after OTA}">
 					<condition var1="exclude_magisk_flash" var2="1"/>
 					<data variable="installmagisk_ota"/>
+				</listitem>
+				<listitem name="Old DashBoard">
+					<data variable="db"/>
 				</listitem>
 			</listbox>
 

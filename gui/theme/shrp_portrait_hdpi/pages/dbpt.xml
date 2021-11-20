@@ -1,0 +1,467 @@
+<?xml version="1.0"?>
+<recovery>
+	<pages>
+
+        <page name="sideloadp">
+			<template name="navCommon"/>
+			<template name="c_status_bar"/>
+			<text style="pageTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
+				<text>{@advanced_btn=Advanced}</text>
+			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
+			<text style="pageSubTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
+				<text>{@adb_sideload_btn=ADB Sideload}</text>
+			</text>
+
+			<text style="subOptionTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
+				<text>{@wipe_btn=Wipe} {@options_hdr=Options}</text>
+			</text>
+			<listbox style="scrolllist">
+				<placement x="%c_hawk_base_column%" y="%rPos24%" w="%file_selector_default_w%" h="300"/>
+				<icon selected="checkbox_true" unselected="checkbox_false"/>
+				<listitem name="{@sideload_wipe_dalvik_chk=Wipe Dalvik Cache}">
+					<data variable="tw_wipe_dalvik"/>
+				</listitem>
+				<listitem name="{@sideload_wipe_cache_chk=Wipe Cache}">
+					<data variable="tw_wipe_cache"/>
+				</listitem>
+			</listbox>
+
+
+			<button>
+				<image resource="c_ok"/>
+				<placement x="860" y="%rndPos105%"/>
+				<actions>
+					<action function="set">tw_back=advanced</action>
+					<action function="set">tw_action=adbsideload</action>
+					<action function="set">tw_action_text1={@sideload_confirm=ADB Sideload}</action>
+					<action function="set">tw_action_text2={@sideload_usage=Usage: adb sideload filename.zip}</action>
+					<action function="set">tw_complete_text1={@sideload_complete=ADB Sideload Complete}</action>
+					<action function="set">tw_has_cancel=1</action>
+					<action function="set">tw_show_reboot=1</action>
+					<action function="set">tw_cancel_action=adbsideloadcancel</action>
+					<action function="page">action_page</action>
+				</actions>
+			</button>
+			<action>
+				<touch key="home"/>
+				<action function="page">c_refresh</action>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<action function="page">ext</action>
+			</action>
+		</page>
+
+		<page name="fixcontextsp">
+			<template name="navCommon"/>
+			<template name="c_status_bar"/>
+
+			<text style="pageTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
+				<text>{@advanced_btn=Advanced}</text>
+			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
+			<text style="pageSubTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
+				<text>{@fix_context_btn=Fix Contexts}</text>
+			</text>
+			<textbox>
+				<placement x="%c_hawk_base_column%" y="%rPos18%" w="%c_console_width%" h="500"/>
+				<text>{@fix_contexts_note1=Note: Fixing contexts is rarely needed.} {@c_file_context=Fixing SELinux Contexts may cause your device to not boot properly.}</text>
+			</textbox>
+
+
+			<button>
+				<image resource="c_ok"/>
+				<placement x="860" y="1628"/>
+				<actions>
+					<action function="set">tw_back=advanced</action>
+					<action function="set">tw_action=fixcontexts</action>
+					<action function="set">tw_action_text1={@fixing_contexts=Fixing Contexts...}</action>
+					<action function="set">tw_complete_text1={@fix_contexts_complete=Fix Contexts Complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="set">tw_show_reboot=1</action>
+					<action function="page">action_page</action>
+				</actions>
+			</button>
+			<action>
+				<touch key="home"/>
+				<action function="page">c_refresh</action>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<action function="page">ext</action>
+			</action>
+		</page>
+		<!--MultiUserDecryptPage-->
+		<page name="decrypt_usersp">
+			<template name="navCommon"/>
+			<template name="c_status_bar"/>
+
+			<text style="pageTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
+				<text>{@decrypt_users=Decrypt Users}</text>
+			</text>
+			<text style="pageSubTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
+				<text>{@decrypt_users_selection=Select a user ID to decrypt}</text>
+			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			
+			<listbox>
+				<placement x="%c_hawk_base_column%" y="%rPos18%" w="%file_selector_default_w%" h="%revPos97%"/>
+				<icon selected="c_usersRadioOn" unselected="c_usersRadioOff" />
+				<data name="tw_crypto_user_id" />
+			</listbox>
+
+
+			<button>
+				<placement x="860" y="%rndPos105%"/>
+				<image resource="c_ok"/>
+				<actions>
+					<action function="set">tw_crypto_password=</action>
+					<action function="set">tw_password_fail=0</action>
+					<action function="page">decrypt</action>
+				</actions>
+			</button>
+			<action>
+				<touch key="back"/>
+				<action function="page">ext</action>
+			</action>
+			<action>
+				<touch key="home"/>
+				<action function="page">c_refresh</action>
+			</action>
+		</page>
+
+		<page name="changeTwrpFolder">
+			<template name="navCommon"/>
+			<template name="c_status_bar"/>
+			<text style="pageTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
+				<text>{@settings_btn=Settings}</text>
+			</text>
+			<text style="pageSubTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
+				<text>{@change_twrp_folder_btn=Change TWRP folder}</text>
+			</text>
+			<!--template name="c_tab_backup"/-->
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+
+			<text style="subOptionTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
+				<text>{@name=Name:}</text>
+			</text>
+
+			<fill color="subBackgroundColor">
+				<placement x="50" y="%rPos24%" w="970" h="94"/>
+			</fill>
+
+			<input>
+				<placement x="80" y="%rPos25%" w="800" h="64"/>
+				<text>%tw_custom_folder%</text>
+				<data name="tw_custom_folder"/>
+				<restrict minlen="1" maxlen="64" allow="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"/>
+				<actions>
+					<action function="set">tw_back=changeTwrpFolder</action>
+					<action function="set">tw_action=applycustomtwrpfolder</action>
+					<action function="set">tw_action_param=%tw_custom_folder%</action>
+					<action function="set">tw_text1={@confirm_action=Confirm}</action>
+					<action function="set">tw_text2={@rename_backup_confirm2=This cannot be undone!}</action>
+					<action function="set">tw_action_text1={@change_twrp_folder_on_process=Changing TWRP folder}</action>
+					<action function="set">tw_complete_text1={@change_twrp_folder_after_process=TWRP folder changed to} %tw_custom_folder%</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="set">tw_filecheck=/sdcard/%tw_custom_folder%</action>
+					<action function="set">tw_existpage=changeTwrpFolder</action>
+					<action function="set">tw_notexistpage=confirm_action</action>
+					<action function="page">filecheck</action>
+				</actions>
+			</input>
+			<button>
+				<placement x="944" y="25" yref="%rPos24%" yop="+"/>
+				<image resource="c_clear_input"/>
+				<action function="clearInput">tw_custom_folder;changeTwrpFolder</action>
+			</button>
+
+			<text style="warnInfoText">
+				<condition var1="tw_fileexists" var2="1"/>
+				<placement x="60" y="100" yref="%rPos24%" yop="+"/>
+				<text>{@tw_folder_exists=A folder with that name already exists!}</text>
+			</text>
+
+			<button style="cnfrmBtn">
+				<placement x="675" y="950" w="350" h="110"/>
+				<fill color="%subBackgroundColor%"/>
+				<text>{@restore_defaults_btn=Restore Defaults}</text>
+				<actions>
+					<action function="set">tw_back=changeTwrpFolder</action>
+					<action function="set">tw_action=applycustomtwrpfolder</action>
+					<action function="set">tw_action_param=TWRP</action>
+					<action function="set">tw_text1={@confirm_action=Confirm}</action>
+					<action function="set">tw_text2={@rename_backup_confirm2=This cannot be undone!}</action>
+					<action function="set">tw_action_text1={@change_twrp_folder_on_process=Changing TWRP folder}</action>
+					<action function="set">tw_complete_text1={@change_twrp_folder_after_process=TWRP folder changed to} TWRP</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="set">tw_filecheck=/sdcard/TWRP</action>
+					<action function="set">tw_existpage=changeTwrpFolder</action>
+					<action function="set">tw_notexistpage=confirm_action</action>
+					<action function="page">filecheck</action>
+				</actions>
+			</button>
+
+
+			<template name="keyboardtemplate"/>
+
+			<action>
+				<touch key="home"/>
+				<actions>
+					<action function="page">c_refresh</action>
+				</actions>
+			</action>
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="page">settings</action>
+				</actions>
+			</action>
+		</page>
+		<page name="partsdcardselp">
+			<template name="navCommon"/>
+			<template name="c_status_bar"/>
+
+			<text style="pageTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
+				<text>{@part_sd_btn=Partition SD Card}</text>
+			</text>
+			<text style="pageSubTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos12%"/>
+				<text>{@invalid_partsd_sel=You must select a removable device}</text>
+			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			<text style="subOptionTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos19%"/>
+				<text>{@select_storage_hdr=Select Storage}</text>
+			</text>
+			<partitionlist style="partitionlist_storage">
+				<placement x="50" y="%rPos24%" w="%file_selector_default_w%" h="%rndPos47%"/>
+				<data name="tw_storage_path"/>
+				<listtype name="storage"/>
+			</partitionlist>
+
+			<button>
+				<image resource="c_ok"/>
+				<placement x="860" y="%rndPos105%"/>
+				<actions>
+					<action function="getpartitiondetails">tw_storage_path</action>
+					<action function="page">partsdcardcheck</action>
+				</actions>
+			</button>
+
+			<action>
+				<touch key="home"/>
+				<action function="page">c_refresh</action>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<action function="page">ext</action>
+			</action>
+		</page>
+
+		<page name="partsdcardcheck">
+			<action>
+				<condition var1="tw_partition_removable" op="=" var2="1"/>
+				<actions>
+					<action function="set">partitionlisterror=0</action>
+					<action function="page">partsdcard</action>
+				</actions>
+			</action>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+			<action>
+				<condition var1="tw_partition_removable" op="!=" var2="1"/>
+				<actions>
+					<action function="set">partitionlisterror=1</action>
+					<action function="page">partsdcardsel</action>
+				</actions>
+			</action>
+		</page>
+
+		<page name="partsdcard">
+			<template name="navCommon"/>
+			<template name="c_status_bar"/>
+
+			<text style="pageTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos3%"/>
+				<text>{@part_sd_btn=Partition SD Card}</text>
+			</text>
+			<action>
+				<touch key="volup"/>
+				<action function="overlay">reboot</action>
+			</action>	
+			<textbox>
+				<placement x="%c_hawk_base_column%" y="%rPos12%" w="%c_console_width%" h="300"/>
+				<font resource="paragraph" color="#FF0000"/>
+				<text>{@part_sd_lose=You will lose all files on your SD card!}</text>
+				<text>{@part_sd_undo=This action cannot be undone!}</text>
+			</textbox>
+			<action>
+				<touch key="voldown"/>
+				<action function="flashlight"/>
+			</action>
+
+			<text style="subOptionTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos22%"/>
+				<text>{@file_system=File System:}</text>
+			</text>
+			<text style="simpleText">
+				<placement x="%c_hawk_base_column%" y="%rPos27%"/>
+				<text>%tw_sdpart_file_system%</text>
+			</text>
+
+
+			<text style="subOptionTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos37%"/>
+				<text>{@part_sd_ext_sz=EXT Size:}</text>
+			</text>
+			<text style="simpleText">
+				<placement x="%c_hawk_base_column%" y="%rPos42%"/>
+				<text>%tw_sdext_size%</text>
+			</text>
+
+			<button style="symbolBtn">
+				<placement x="585" y="-20" yref="%rPos42%" yop="+" w="150" h="110"/>
+				<fill color="%subBackgroundColor%"/>
+				<text>-</text>
+				<action function="addsubtract">tw_sdext_size-256</action>
+			</button>
+
+			<button style="symbolBtn">
+				<placement x="785" y="-20" yref="%rPos42%" yop="+" w="240" h="110"/>
+				<fill color="%subBackgroundColor%"/>
+				<text>+</text>
+				<action function="addsubtract">tw_sdext_size+256</action>
+			</button>
+
+			
+
+			<text style="subOptionTitle">
+				<placement x="%c_hawk_base_column%" y="%rPos50%"/>
+				<text>{@part_sd_swap_sz=Swap Size:}</text>
+			</text>
+			<text style="simpleText">
+				<placement x="%c_hawk_base_column%" y="%rPos55%"/>
+				<text>%tw_swap_size%</text>
+			</text>
+
+
+
+			<button style="symbolBtn">
+				<placement x="585" y="-20" yref="%rPos55%" yop="+" w="150" h="110"/>
+				<fill color="%subBackgroundColor%"/>
+				<text>-</text>
+				<action function="addsubtract">tw_swap_size-256</action>
+			</button>
+
+			<button style="symbolBtn">
+				<placement x="785" y="-20" yref="%rPos55%" yop="+" w="240" h="110"/>
+				<fill color="%subBackgroundColor%"/>
+				<text>+</text>
+				<action function="addsubtract">tw_swap_size+256</action>
+			</button>
+
+
+			<button style="c_circle4">
+				<placement x="860" y="%rndPos81%"/>
+				<text>EXT3</text>
+				<action function="set">tw_sdpart_file_system=ext3</action>
+			</button>
+
+			<button style="c_circle4">
+				<placement x="860" y="%rndPos93%"/>
+				<text>EXT4</text>
+				<action function="set">tw_sdpart_file_system=ext4</action>
+			</button>
+
+			<button>
+				<placement x="860" y="%rndPos105%"/>
+				<image resource="c_ok"/>
+				<action function="page">partsdcardaction</action>
+				<actions>
+					<action function="set">tw_back=partsdcard</action>
+					<action function="set">tw_action=partitionsd</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=set</action>
+					<action function="set">tw_action2_param=tw_zip_location=/sdcard</action>
+					<action function="set">tw_action_text1={@partitioning_sd=Partitioning SD Card...}</action>
+					<action function="set">tw_action_text2={@partitioning_sd2=This will take a few minutes.}</action>
+					<action function="set">tw_complete_text1={@part_sd_complete=Partitioning Complete}</action>
+					<action function="page">action_page</action>
+				</actions>
+			</button>
+
+
+			<action>
+				<touch key="home"/>
+				<action function="page">c_refresh</action>
+			</action>
+
+			<action>
+				<touch key="back"/>
+				<actions>
+					<action function="set">partitionlisterror=0</action>
+					<action function="page">partsdcardsel</action>
+				</actions>
+			</action>
+		</page>
+	</pages>
+</recovery>

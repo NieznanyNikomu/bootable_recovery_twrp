@@ -79,6 +79,12 @@
 			<font resource="font_s" color="%secondaryColor%"/>
 			<fastscroll rectcolor="%accentColor%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
 		</style>
+		<style name="db">
+			<background color="%backgroundColor%"/>
+			<font resource="db" color="%secondaryColor%"/>
+			<iconsize w="125" h="125"/>
+			<fastscroll rectcolor="%accentColor%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
+		</style>
 
 		<style name="partitionlist">
 			<background color="%backgroundColor%"/>
@@ -197,7 +203,12 @@
 		<style name="dashboardHeader">
 			<font resource="largeBold" color="%accentColor%"/>
 		</style>
-
+		<style name="pp">
+			<background color="%backgroundColor%"/>
+			<font resource="largeBold" color="%accentColor%"/>
+			<iconsize w="100" h="100"/>
+			<fastscroll rectcolor="%accentColor%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
+		</style>
 	</styles>
 </recovery>
 

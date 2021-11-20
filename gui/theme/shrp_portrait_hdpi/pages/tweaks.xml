@@ -23,7 +23,7 @@
 
 
 			<listbox style="customListbox">
-				<placement x="%c_hawk_base_column%" y="%rPos18%" w="%file_selector_default_w%" h="1100"/>
+				<placement x="%c_hawk_base_column%" y="%rPos18%" w="%file_selector_default_w%" h="1450"/>
 				<icon selected="fileImg2" unselected="fileImg2"/>
 				<data name="shrpTweaks"/>
 			</listbox>

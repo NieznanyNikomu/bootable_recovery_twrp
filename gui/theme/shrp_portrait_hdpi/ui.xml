@@ -26,7 +26,8 @@
 		<xmlfile name="pages/advanced.xml"/>
 		<xmlfile name="pages/backup.xml"/>
 		<xmlfile name="pages/copylog.xml"/>
-		<xmlfile name="pages/dashboard.xml"/>
+		<xmlfile name="pages/db.xml"/>
+		<xmlfile name="pages/dbpt.xml"/>
 		<xmlfile name="pages/essential.xml"/>
 		<xmlfile name="pages/files.xml"/>
 		<xmlfile name="pages/lockscreen.xml"/>
@@ -35,7 +36,7 @@
 		<xmlfile name="pages/mount.xml"/>
 		<xmlfile name="pages/partition.xml"/>
 		<xmlfile name="pages/protection.xml"/>
-		<xmlfile name="pages/reboot.xml"/>
+		<xmlfile name="pages/mypp.xml"/>
 		<xmlfile name="pages/restore.xml"/>
 		<xmlfile name="pages/security.xml"/>
 		<xmlfile name="pages/settings.xml"/>

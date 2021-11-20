@@ -41,6 +41,7 @@
 
 		<font name="extraLargeBoldPlus" filename="primaryBold.ttf" size="80"/>
 		<font name="extraLargeBoldProPlus" filename="primaryBold.ttf" size="90"/>
+		<font name="db" filename="primaryBold.ttf" size="50"/>
 		<font name="superExtraLargeBold" filename="primaryRegular.ttf" size="170"/>
 
 
