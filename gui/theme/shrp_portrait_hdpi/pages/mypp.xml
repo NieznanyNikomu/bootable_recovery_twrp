@@ -17,10 +17,6 @@
 				<action function="page">main2</action>
 			</action>
 			<action>
-				<touch key="power+voldown"/>
-				<action function="screenshot"/>
-			</action>
-			<action>
 				<touch key="volup"/>
 				<action function="overlay">reboot</action>
 			</action>		
