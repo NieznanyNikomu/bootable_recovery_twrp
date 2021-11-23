@@ -61,6 +61,7 @@ extern "C" {
 #include "objects.hpp"
 #include "tw_atomic.hpp"
 #include "../SHRPMAIN.hpp"
+#include "../SHRPINIT.hpp"
 #include "../SHRPTOOLS.hpp"
 #include "../SHRPTHEME.hpp"
 #include "../SHRPFILETOOLS.hpp"
@@ -172,6 +173,7 @@ GUIAction::GUIAction(xml_node<>* node)
 		ADD_ACTION(key);
 		ADD_ACTION(page);
 		ADD_ACTION(reload);
+		ADD_ACTION(customReload);
 		ADD_ACTION(readBackup);
 		ADD_ACTION(set);
 		ADD_ACTION(clear);
@@ -608,6 +610,18 @@ int GUIAction::page(std::string arg)
 int GUIAction::reload(std::string arg __unused)
 {
 	PageManager::RequestReload();
+	// The actual reload is handled in pages.cpp in PageManager::RunReload()
+	// The reload will occur on the next Update or Render call and will
+	// be performed in the rendoer thread instead of the action thread
+	// to prevent crashing which could occur when we start deleting
+	// GUI resources in the action thread while we attempt to render
+	// with those same resources in another thread.
+	return 0;
+}
+
+int GUIAction::customReload(std::string arg __unused)
+{
+	PageManager::RequestCustomReload(arg);
 	// The actual reload is handled in pages.cpp in PageManager::RunReload()
 	// The reload will occur on the next Update or Render call and will
 	// be performed in the rendoer thread instead of the action thread
@@ -1631,6 +1645,20 @@ int GUIAction::decrypt(std::string arg __unused)
 				}
 			}
 			PartitionManager.Decrypt_Adopted();
+#ifdef SHRP_EXPRESS_USE_DATA
+			/*
+			Trying to fetch theme and other datas.
+			This is essential because if data is decrpyted then 
+			first init will not able to find shrp path.
+			*/
+			Express::updateSHRPBasePath();
+
+#ifdef SHRP_EXPRESS
+			Express::init();
+			SHRP::handleLock();
+			reload("dummy");
+#endif
+#endif
 		}
 	}
 
@@ -2022,7 +2050,7 @@ int GUIAction::setlanguage(std::string arg __unused)
 
 	operation_start("Set Language");
 	PageManager::LoadLanguage(DataManager::GetStrValue("tw_language"));
-	PageManager::RequestReload();
+	PageManager::RequestCustomReload();
 	op_status = 0; // success
 
 	operation_end(op_status);
@@ -3005,7 +3033,7 @@ int GUIAction::applyDefaultTheme(std::string arg __unused){
 		GUIAction::c_repack("theme");
 		if(TWFunc::Path_Exists("/tmp/bak")){TWFunc::Exec_Cmd("rm -rf /tmp/bak");}
 		if(TWFunc::Path_Exists("/tmp/work")){TWFunc::Exec_Cmd("rm -rf /tmp/work");}
-		GUIAction::reload("dummy");
+		GUIAction::customReload("main2");
 	}else{
 		if(TWFunc::Path_Exists("/tmp/bak")){TWFunc::Exec_Cmd("cp -r /tmp/bak/ /twres/");}
 		if(TWFunc::Path_Exists("/tmp/bak")){TWFunc::Exec_Cmd("rm -rf /tmp/bak");}
@@ -3034,7 +3062,7 @@ int GUIAction::applyCustomTheme(std::string arg){
 
 	if(!err){
 		GUIAction::c_repack("dummy");
-		GUIAction::reload("dummy");
+		GUIAction::customReload("main2");
 	}else{
 		if(TWFunc::Path_Exists("/tmp/bak")){TWFunc::Exec_Cmd("cp -r /tmp/bak/ /twres/");}
 		if(TWFunc::Path_Exists("/tmp/bak")){TWFunc::Exec_Cmd("rm -rf /tmp/bak");}
