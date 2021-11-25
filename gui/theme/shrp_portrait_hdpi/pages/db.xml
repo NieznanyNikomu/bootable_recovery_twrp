@@ -418,7 +418,6 @@
 			</button>
 
 
-
 			<button>
 				<condition var1="db" var2="1"/>
 				<condition var1="dashboardSubTintEnabled" var2="1"/>
@@ -445,7 +444,7 @@
 				</actions>
 			</button>
 			<button style="dashboardText2">
-				<condition var1="db" var2="1"/>
+			<condition var1="db" var2="1"/>
 				<condition var1="dashboardTextColorEnabled" var2="0"/>
 				<placement x="313" y="%rPos78%" w="205" h="70"/>
 				<text>{@c_theme=Theme}</text>
