@@ -4,12 +4,10 @@
         <page name="c_splash_theme">
 			<template name="navCommon"/>
 			<template name="c_status_bar"/>
-			<button>
-				<placement x="0" y="%rndPos58%" w="1080" h="100"/>
-				<font resource="extraLargeBoldPlus" color="%primaryColor%"/>
-				<fill color="%transparent%"/>
-				<text>{@c_theme=Theme}</text>
-			</button>
+			<image>
+				<placement x="%c_hawk_base_column%" y="%rPos8%"/>
+				<image resource="t_g"/>
+			</image>
 			<action>
 				<touch key="volup"/>
 				<action function="overlay">reboot</action>

@@ -74,7 +74,10 @@
 				</listitem>
 				<listitem name="{@c_magisk=  Magisk}">
 					<icon resource="c_dashboard_magisk"/>
+				<actions>
+					<action function="shrp_init"/>
 					<action function="page">c_splash_magisk</action>
+				</actions>
 				</listitem>
 
 				<listitem name="{@c_tweaks=  Tweaks}">
