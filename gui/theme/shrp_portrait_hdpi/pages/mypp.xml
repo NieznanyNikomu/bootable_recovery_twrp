@@ -25,11 +25,11 @@
 				<action function="flashlight"/>
 			</action>
 			<button>
-				<placement x="450" y="%rPos35%"/>
+				<placement x="470" y="%rPos35%"/>
 				<image resource="c_dashboard_reboot"/>
 			</button>
 			<listbox style="pp">
-			<placement x="340" y="%rPos45%" w="400" h="500"/>
+			<placement x="335" y="%rPos45%" w="410" h="625"/>
 
 				<listitem name="{@rb_poweroff_btn=Power Off}">
 					<icon resource="c_power_off"/>
